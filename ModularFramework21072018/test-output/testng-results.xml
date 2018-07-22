@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Mercury Test Suite" duration-ms="15411" started-at="2018-07-22T17:09:04Z" finished-at="2018-07-22T17:09:19Z">
+    <groups>
+    </groups>
+    <test name="Homepage Tests" duration-ms="15411" started-at="2018-07-22T17:09:04Z" finished-at="2018-07-22T17:09:19Z">
+      <class name="com.mercurytravel.test.HomepageTests">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:com.mercurytravel.test.HomepageTests@51081592]" name="invokeBrowser" is-config="true" duration-ms="10392" started-at="2018-07-22T22:39:04Z" finished-at="2018-07-22T22:39:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="verifyTitleOfThePage()[pri:0, instance:com.mercurytravel.test.HomepageTests@51081592]" name="verifyTitleOfThePage" duration-ms="35" started-at="2018-07-22T22:39:15Z" finished-at="2018-07-22T22:39:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitleOfThePage -->
+        <test-method status="PASS" signature="verifyUserLogin()[pri:1000, instance:com.mercurytravel.test.HomepageTests@51081592]" name="verifyUserLogin" duration-ms="4020" started-at="2018-07-22T22:39:15Z" finished-at="2018-07-22T22:39:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserLogin -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.mercurytravel.test.HomepageTests@51081592]" name="closeBrowser" is-config="true" duration-ms="887" started-at="2018-07-22T22:39:19Z" finished-at="2018-07-22T22:39:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.mercurytravel.test.HomepageTests -->
+    </test> <!-- Homepage Tests -->
+  </suite> <!-- Mercury Test Suite -->
+</testng-results>
