@@ -2,28 +2,36 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Mercury Test Suite" duration-ms="15411" started-at="2018-07-22T17:09:04Z" finished-at="2018-07-22T17:09:19Z">
+  <suite name="Default suite" duration-ms="17860" started-at="2018-07-28T17:52:46Z" finished-at="2018-07-28T17:53:04Z">
     <groups>
     </groups>
-    <test name="Homepage Tests" duration-ms="15411" started-at="2018-07-22T17:09:04Z" finished-at="2018-07-22T17:09:19Z">
+    <test name="Default test" duration-ms="17860" started-at="2018-07-28T17:52:46Z" finished-at="2018-07-28T17:53:04Z">
       <class name="com.mercurytravel.test.HomepageTests">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:com.mercurytravel.test.HomepageTests@51081592]" name="invokeBrowser" is-config="true" duration-ms="10392" started-at="2018-07-22T22:39:04Z" finished-at="2018-07-22T22:39:14Z">
+        <test-method status="PASS" signature="initialSetup()[pri:0, instance:com.mercurytravel.test.HomepageTests@c038203]" name="initialSetup" is-config="true" duration-ms="843" started-at="2018-07-28T23:22:45Z" finished-at="2018-07-28T23:22:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialSetup -->
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:com.mercurytravel.test.HomepageTests@c038203]" name="invokeBrowser" is-config="true" duration-ms="12618" started-at="2018-07-28T23:22:46Z" finished-at="2018-07-28T23:22:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="verifyTitleOfThePage()[pri:0, instance:com.mercurytravel.test.HomepageTests@51081592]" name="verifyTitleOfThePage" duration-ms="35" started-at="2018-07-22T22:39:15Z" finished-at="2018-07-22T22:39:15Z">
+        <test-method status="PASS" signature="verifyTitleOfThePage()[pri:0, instance:com.mercurytravel.test.HomepageTests@c038203]" name="verifyTitleOfThePage" duration-ms="48" started-at="2018-07-28T23:22:58Z" finished-at="2018-07-28T23:22:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitleOfThePage -->
-        <test-method status="PASS" signature="verifyUserLogin()[pri:1000, instance:com.mercurytravel.test.HomepageTests@51081592]" name="verifyUserLogin" duration-ms="4020" started-at="2018-07-22T22:39:15Z" finished-at="2018-07-22T22:39:19Z">
+        <test-method status="PASS" signature="verifyUserLogin()[pri:1000, instance:com.mercurytravel.test.HomepageTests@c038203]" name="verifyUserLogin" duration-ms="4112" started-at="2018-07-28T23:22:59Z" finished-at="2018-07-28T23:23:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserLogin -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.mercurytravel.test.HomepageTests@51081592]" name="closeBrowser" is-config="true" duration-ms="887" started-at="2018-07-22T22:39:19Z" finished-at="2018-07-22T22:39:19Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.mercurytravel.test.HomepageTests@c038203]" name="closeBrowser" is-config="true" duration-ms="1027" started-at="2018-07-28T23:23:03Z" finished-at="2018-07-28T23:23:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="cleanup()[pri:0, instance:com.mercurytravel.test.HomepageTests@c038203]" name="cleanup" is-config="true" duration-ms="950" started-at="2018-07-28T23:23:04Z" finished-at="2018-07-28T23:23:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
       </class> <!-- com.mercurytravel.test.HomepageTests -->
-    </test> <!-- Homepage Tests -->
-  </suite> <!-- Mercury Test Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

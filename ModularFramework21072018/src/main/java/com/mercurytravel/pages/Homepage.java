@@ -70,4 +70,8 @@ public class Homepage extends SetupPage {
 	public String getWelcomeText() throws Exception {
 		return elementControl.getText(welcomeText);
 	}
+	
+	public void logout(){
+		
+	}
 }

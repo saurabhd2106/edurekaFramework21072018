@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Mercury Test Suite">
+	<test name="Homepage Tests">
+		<groups>
+			<run>
+				<include name="multipleTest"></include>
+			</run>
+		</groups>
+		<packages>
+
+			<package name="com.mercurytravel.test"></package>
+		</packages>
+	</test> <!-- Homepage Tests -->
+</suite> <!-- Mercury Test Suite -->

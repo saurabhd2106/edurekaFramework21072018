@@ -1,9 +1,12 @@
 package com.mercurytravel.test;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
-public class HomepageTests extends BasicOperations {
+import utils.TestDataProvider;
+
+public class HomepageLoginTestWithMultipleData extends BasicOperations {
 
 	@Test(priority = 0)
 	public void verifyTitleOfThePage() throws Exception {
@@ -12,11 +15,10 @@ public class HomepageTests extends BasicOperations {
 		Assert.assertEquals(cmnDriver.getTitle(), actualHomepageTitle);
 	}
 
-	@Test(priority = 1000)
-	public void verifyUserLogin() throws Exception {
+	@Test(priority = 1000, groups="multipleTest",dataProvider="getData",dataProviderClass=TestDataProvider.class)
+	public void verifyUserLogin(String userEmailId, String userPassword) throws Exception {
 
-		String userEmailId = configProperties.getProperty("userEmailId");
-		String userPassword = configProperties.getProperty("userPassword");
+	
 		homepage.userLogin(userEmailId, userPassword);
 
 		String expectedWelcomeText = configProperties.getProperty("welcomeText");;
@@ -25,5 +27,12 @@ public class HomepageTests extends BasicOperations {
 		
 	//	camera.captureAndSaveScreenshot(currentProjectDirectory+"/screenshots/verifyUserlogin.png");
 		Assert.assertEquals(actualWelcomeText, expectedWelcomeText);
+		
+		
+	}
+	
+	@AfterMethod(groups="multipleTest")
+	public void afterTest(){
+		homepage.logout();
 	}
 }
