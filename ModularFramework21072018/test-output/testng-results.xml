@@ -1,33 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="2" failed="0" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17860" started-at="2018-07-28T17:52:46Z" finished-at="2018-07-28T17:53:04Z">
+  <suite name="Default suite" duration-ms="129" started-at="2018-07-29T16:31:17Z" finished-at="2018-07-29T16:31:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17860" started-at="2018-07-28T17:52:46Z" finished-at="2018-07-28T17:53:04Z">
+    <test name="Default test" duration-ms="129" started-at="2018-07-29T16:31:17Z" finished-at="2018-07-29T16:31:18Z">
       <class name="com.mercurytravel.test.HomepageTests">
-        <test-method status="PASS" signature="initialSetup()[pri:0, instance:com.mercurytravel.test.HomepageTests@c038203]" name="initialSetup" is-config="true" duration-ms="843" started-at="2018-07-28T23:22:45Z" finished-at="2018-07-28T23:22:46Z">
+        <test-method status="PASS" signature="initialSetup()[pri:0, instance:com.mercurytravel.test.HomepageTests@cc285f4]" name="initialSetup" is-config="true" duration-ms="784" started-at="2018-07-29T22:01:17Z" finished-at="2018-07-29T22:01:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialSetup -->
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:com.mercurytravel.test.HomepageTests@c038203]" name="invokeBrowser" is-config="true" duration-ms="12618" started-at="2018-07-28T23:22:46Z" finished-at="2018-07-28T23:22:58Z">
+        <test-method status="FAIL" signature="invokeBrowser()[pri:0, instance:com.mercurytravel.test.HomepageTests@cc285f4]" name="invokeBrowser" is-config="true" duration-ms="0" started-at="2018-07-29T22:01:17Z" finished-at="2018-07-29T22:01:17Z">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[Invalid Browser type : chromehsdkjf]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: Invalid Browser type : chromehsdkjf
+	at commonLibs.implementation.CommonDriver.<init>(CommonDriver.java:42)
+	at com.mercurytravel.test.BasicOperations.invokeBrowser(BasicOperations.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:169)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="verifyTitleOfThePage()[pri:0, instance:com.mercurytravel.test.HomepageTests@c038203]" name="verifyTitleOfThePage" duration-ms="48" started-at="2018-07-28T23:22:58Z" finished-at="2018-07-28T23:22:59Z">
+        <test-method status="SKIP" signature="verifyTitleOfThePage()[pri:0, instance:com.mercurytravel.test.HomepageTests@cc285f4]" name="verifyTitleOfThePage" duration-ms="2" started-at="2018-07-29T22:01:18Z" finished-at="2018-07-29T22:01:18Z">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[Invalid Browser type : chromehsdkjf]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: Invalid Browser type : chromehsdkjf
+	at commonLibs.implementation.CommonDriver.<init>(CommonDriver.java:42)
+	at com.mercurytravel.test.BasicOperations.invokeBrowser(BasicOperations.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:169)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitleOfThePage -->
-        <test-method status="PASS" signature="verifyUserLogin()[pri:1000, instance:com.mercurytravel.test.HomepageTests@c038203]" name="verifyUserLogin" duration-ms="4112" started-at="2018-07-28T23:22:59Z" finished-at="2018-07-28T23:23:03Z">
+        <test-method status="SKIP" signature="afterAMethod(org.testng.ITestResult)[pri:0, instance:com.mercurytravel.test.HomepageTests@cc285f4]" name="afterAMethod" is-config="true" duration-ms="0" started-at="2018-07-29T22:01:18Z" finished-at="2018-07-29T22:01:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterAMethod -->
+        <test-method status="SKIP" signature="verifyUserLogin()[pri:1000, instance:com.mercurytravel.test.HomepageTests@cc285f4]" name="verifyUserLogin" duration-ms="3" started-at="2018-07-29T22:01:18Z" finished-at="2018-07-29T22:01:18Z">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[Invalid Browser type : chromehsdkjf]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: Invalid Browser type : chromehsdkjf
+	at commonLibs.implementation.CommonDriver.<init>(CommonDriver.java:42)
+	at com.mercurytravel.test.BasicOperations.invokeBrowser(BasicOperations.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:169)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserLogin -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.mercurytravel.test.HomepageTests@c038203]" name="closeBrowser" is-config="true" duration-ms="1027" started-at="2018-07-28T23:23:03Z" finished-at="2018-07-28T23:23:04Z">
+        <test-method status="SKIP" signature="afterAMethod(org.testng.ITestResult)[pri:0, instance:com.mercurytravel.test.HomepageTests@cc285f4]" name="afterAMethod" is-config="true" duration-ms="0" started-at="2018-07-29T22:01:18Z" finished-at="2018-07-29T22:01:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterAMethod -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:com.mercurytravel.test.HomepageTests@cc285f4]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2018-07-29T22:01:18Z" finished-at="2018-07-29T22:01:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="cleanup()[pri:0, instance:com.mercurytravel.test.HomepageTests@c038203]" name="cleanup" is-config="true" duration-ms="950" started-at="2018-07-28T23:23:04Z" finished-at="2018-07-28T23:23:05Z">
+        <test-method status="SKIP" signature="cleanup()[pri:0, instance:com.mercurytravel.test.HomepageTests@cc285f4]" name="cleanup" is-config="true" duration-ms="0" started-at="2018-07-29T22:01:18Z" finished-at="2018-07-29T22:01:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanup -->

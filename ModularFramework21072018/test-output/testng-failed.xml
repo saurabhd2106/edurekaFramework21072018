@@ -3,11 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="test.DemoTestDataProvider">
+      <class name="com.mercurytravel.test.HomepageTests">
         <methods>
-          <include name="printTestData"/>
+          <include name="invokeBrowser"/>
+          <include name="initialSetup"/>
+          <include name="verifyTitleOfThePage"/>
+          <include name="verifyUserLogin"/>
         </methods>
-      </class> <!-- test.DemoTestDataProvider -->
+      </class> <!-- com.mercurytravel.test.HomepageTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

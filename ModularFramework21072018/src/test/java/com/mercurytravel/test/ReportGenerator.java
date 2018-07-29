@@ -14,7 +14,7 @@ import utils.ReadConfigFileUtils;
 
 public class ReportGenerator {
 	public String currentProjectDirectory;
-	private String testExecutionStartTime;
+	public String testExecutionStartTime;
 
 	public Properties configProperties;
 	private String configFilename;
